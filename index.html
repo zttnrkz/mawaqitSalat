@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html  lang="ar" dir="rtl">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="countries.js" defer></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="salat.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>mawaqitSalat</title>
+    <link rel="icon" href="mawaqitSalat.png">
+</head>
+
+<body>
+    <header class="navbar">
+        <span class="title">السلام عليكم ورحمه الله تعالى وبركاته</span>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>مواقيت الصلاة</h1>
+            <p>اعثر بسهولة على مواقيت الصلاة في مدينتك</p>
+
+            <div class="search-box">
+                <div class="field">
+                    <label>الدولة</label>
+                    <select id="country">
+                        <option></option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>المدينة</label>
+                    <select id="city">
+                        <option></option>
+                    </select>
+                </div>
+
+                <button id="search-btn">⌕ بحث</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="prayer-section">
+
+        <div class="prayer-main">
+
+            <div class="location-header">
+                <div>
+                    <span class="location"></span>
+                </div>
+            </div>
+
+            <div class="prayer-grid">
+
+                <div class="prayer-card">
+                    <div class="prayer-icon">🌅</div>
+                    <h3>الفجر</h3>
+                    <strong id="fajr"></strong>
+                </div>
+
+                <div class="prayer-card">
+                    <div class="prayer-icon">☀️</div>
+                    <h3>الشروق</h3>
+                    <strong id="sunrise"></strong>
+                </div>
+
+                <div class="prayer-card">
+                    <div class="prayer-icon">☀️</div>
+                    <h3>الظهر</h3>
+                    <strong id="dhuhr"></strong>
+                </div>
+
+                <div class="prayer-card">
+                    <div class="prayer-icon">🌤️</div>
+                    <h3>العصر</h3>
+                    <strong id="asr"></strong>
+                </div>
+
+                <div class="prayer-card">
+                    <div class="prayer-icon">🌇</div>
+                    <h3>المغرب</h3>
+                    <strong id="maghrib"></strong>
+                </div>
+
+                <div class="prayer-card">
+                    <div class="prayer-icon">🌙</div>
+                    <h3>العشاء</h3>
+                    <strong id="isha"></strong>
+                </div>
+
+            </div>
+
+            <div class="reminder">
+                <div class="reminder-item">
+                    <span class="reminder-icon">🕌</span>
+                    <div>
+                        <strong>اللهم تقبل منا ومنكم</strong>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="reminder-item">
+                    <span class="reminder-icon">📖</span>
+                    <div>
+                        <strong>تذكير اليوم</strong>
+                        <p>« .الصلاةُ نورُ الحياةِ» </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <div class="logo">مواقيت <span>الصلاة</span></div>
+                <p>مواعيد صلاة بسيطة ومتاحة في كل مكان</p>
+            </div>
+
+            <div class="footer-share">
+
+                <div class="share-media">
+                    <a href="https://www.instagram.com/zakaria_nait_tizi?obrf=Z29lN3Izd2VkbWxv" target="_blank"><img src="insta.webp" alt="insta"></a>
+                    <a href="https://www.linkedin.com/in/zakaria-nait-tizi-868b5544a/" target="_blank"><img src="linkedin.webp" alt="linkedin"></a>
+                    <a href="https://github.com/zttnrkz" target="_blank"><img src="github.webp" alt="github"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span class="developer">Developed by <strong>Zakaria Nait Tizi</strong></span>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
