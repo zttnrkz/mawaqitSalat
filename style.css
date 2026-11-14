@@ -492,7 +492,7 @@ button {
 .share-media a {
     transition: opacity 0.2s ease;
     font-size: 30px;
-    color: #0d6efd; /* اللون الأزرق للأيقونات */
+    color: #079b78; /* اللون الأزرق للأيقونات */
     text-decoration: none;
 }
 
@@ -518,6 +518,9 @@ button {
     color: #9da8bc;
 
     font-size: 13px;
+}
+footer strong{
+    color: #079b78;
 }
 
 
