@@ -489,10 +489,15 @@ button {
     justify-content: center;
 }
 
-
 .share-media a {
     transition: opacity 0.2s ease;
     font-size: 30px;
+    color: #0d6efd; /* اللون الأزرق للأيقونات */
+    text-decoration: none;
+}
+
+.share-media a i {
+    background: transparent !important; /* يحيد أي خلفية مربعة أو دائرية */
 }
 
 .share-media a:hover {
